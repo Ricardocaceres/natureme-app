@@ -8,7 +8,7 @@ from .models import Post
 #define function to post blogposts
 def post_list(request):
 	#publish blog posts sorted by 'published date'
-	Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
+	posts=Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
 	#return function render, paremeter request and a template file 'blog/post_list.html'
 	#{} add things for template to use
 	return render(request, 'blog/post_list.html', {'posts':posts})
