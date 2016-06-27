@@ -1,6 +1,6 @@
 <!--After every change, dont forget to push and pull -->
 
-<!-- Tell HTML fiule that added CSS -->
+<!-- Tell HTML file that added CSS -->
 {% load staticfiles %}
 
 <!DOCTYPE html>
@@ -24,6 +24,10 @@
 <body>
  
     <div class = "page-header">
+    	<!-- form-->
+    	{% if user.is_authenticated %}
+    		<a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+    	{% endif %}
         <h1><a href="">Natureme Blog</a></h1>
     </div>
 	
@@ -31,7 +35,7 @@
 	<div class="content container">
 	    <div class="row">
 	        <div class="col-md-8">
-	        	<!-- Template tag 'block' to make an area that will have HTML inserted in it. HTML will come from template that extends this template-->
+	        	<!-- Template tag 'block' makes an area that will have HTML inserted in it . HTML will come from template that extends this template-->
 		    	{% block content %}
 		    	{% endblock %}
 	        </div>
