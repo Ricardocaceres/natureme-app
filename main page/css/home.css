@@ -1,0 +1,128 @@
+.container-home{
+    background-image: url('../images/bg-natureme.png')!important;  
+    background-size: 100%;
+}
+.box-home{
+    width: 50%;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 15%;
+    margin-bottom: 15%;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 768px) {
+    .box-home{
+        width: 80%;
+    }
+}
+
+.img-home{
+    width: 100%;
+}
+.txt-home{
+    color: #fff;
+    font-weight: normal;
+}
+.bar-home{
+    background-image: url('../images/bar-home.png');
+    background-size: 100%;
+}
+.txt-bar-home{
+    font-size: 1.5em;
+    color: #fff;
+    text-align: center;
+    padding: 1.5em 0;
+}
+
+.icons{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.icons-home{
+    width: 70px;
+}
+.tit-icons{
+    font-size: 1.8em;
+    font-weight: 600;
+    color: #282828;
+    margin: 5px 0;
+}
+.txt-icons{
+    font-size: 1em;
+    color: #282828;
+    margin-top: 20px;
+    padding: 0 30px;
+}
+
+.testmonials-txts{
+    margin: 2em 0;
+}
+.txt-blue-bold{
+    font-size: 1.8em;
+    color: #1A6D95;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.quotes-blue-bold{
+    font-size: 3em;
+    color: #1A6D95;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: "Times New Roman", Georgia, Serif!important;
+}
+.txt-test{
+    font-size: 1.5em;
+}
+.name-test{
+    font-size: 0.8em;
+    font-weight: bold;
+    color: #525252;
+}
+.faq{
+    background-color: #A6F13C;
+    width: 100%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+.txt-bar-faq{
+    font-size: 1.5em;
+    color: #fff;
+    text-align: center;
+    padding: 1.5em 0;
+    text-transform: uppercase;
+}
+.box-faq{
+    background-color: #F3F3F3;
+    border-radius: 10px;
+    position: relative;
+    margin: 0 auto;
+    width: 70%;
+    height: auto;
+    min-height: 300px;
+    margin-bottom: 50px;
+    padding: 20px;
+}
+.tit-faq{
+    font-size: 1.5em;
+    color: #1A6D95;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 25px 0;
+}
+.txt-faq{
+    line-height: 2em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

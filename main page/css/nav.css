@@ -1,0 +1,146 @@
+nav{
+	background-color: #56d611!important;
+	border: 0!important;
+}
+.navbar-inverse .navbar-nav>li>a{
+	color: #fff;
+}
+.navbar-inverse .navbar-nav>li>a:hover{
+	color: #f1f1f1;
+}
+
+/*progress-bar*/
+.flexer,
+.progress-indicator {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.no-flexer,
+.progress-indicator.stacked {
+    display: block;
+}
+
+.no-flexer-element {
+    -ms-flex: 0;
+    -webkit-flex: 0;
+    -moz-flex: 0;
+    flex: 0;
+}
+
+.flexer-element,
+.progress-indicator>li {
+    -ms-flex: 1;
+    -webkit-flex: 1;
+    -moz-flex: 1;
+    flex: 1;
+}
+
+.progress-indicator {
+    margin: 0 0 1em;
+    padding: 0;
+    font-size: 80%;
+}
+
+.progress-indicator>li {
+    list-style: none;
+    text-align: center;
+    width: auto;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    color: #bbb;
+    display: block;
+}
+
+.progress-indicator>li .bubble-next {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: #ccc;
+    border: 3px solid #ccc;
+    display: block;
+    margin: 0 auto .5em;
+}
+
+.progress-indicator>li .bubble-active {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: #56d611;
+    border: 3px solid #56d611;
+    display: block;
+    margin: 0 auto .5em;
+}
+
+.progress-indicator>li .bubble-finished {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: #56d611;
+    border: 3px solid #56d611;
+    background-image: url("../images/ok.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 55%;
+    display: block;
+    margin: 0 auto .5em;
+}
+
+.progress-indicator>li .bubble:after,
+.progress-indicator>li .bubble:before {
+    display: block;
+    position: absolute;
+    top: 22px;
+    width: 46%;
+    height: 3px;
+    content: '';
+    background-color: #56d611;
+}
+
+.progress-indicator>li .bubble-next:after,
+.progress-indicator>li .bubble-next:before {
+    display: block;
+    position: absolute;
+    top: 22px;
+    width: 46%;
+    height: 3px;
+    content: '';
+    background-color: #ccc;
+}
+
+.progress-indicator>li .bubble:before {
+    left: 0;
+}
+.progress-indicator>li .bubble:after {
+    right: 0;
+}
+
+.progress-bar-circles{
+	margin-top: 6em;
+}
+
+.finished-txt{
+	color: #000;
+}
+.active-txt{
+	color: #000;
+	font-weight: bold;
+}
+.next-txt{
+	color: #bbb;
+}
+.links-progress-bar,
+.links-progress-bar:hover{
+	text-decoration: none;
+}
+
+@media handheld,
+screen and (max-width:400px) {
+    .progress-indicator {
+        font-size: 60%;
+    }
+}

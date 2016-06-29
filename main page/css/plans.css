@@ -1,0 +1,74 @@
+.postcode{
+	margin: 1.5em 0 0 0;
+}
+.plans{
+	border-radius: 5px;
+	padding: 0;
+	background-color: #e5e5e5;
+	border: 0;
+}
+.tit-plan-name{
+	color: #fff;
+	padding: 15px;
+	margin: 0!important;
+	border-radius: 5px 5px 0 0;
+}
+.price{
+	font-size: 1.6em;
+	color: #fff;
+	padding: 10px 0;
+}
+.price-emph{
+	font-size: 1.7em;
+	font-weight: bold;
+}
+.descrp-plans{
+	margin: 10px 0;
+}
+.descrp-plans-once{
+	margin: 17px 0;
+}
+
+/*weekly*/
+.name-plan-weekly{
+	background-color: #3d4d64;
+}
+.price-weekly{
+	background-color: #44566f;
+}
+
+/*fort*/
+.name-plan-fort{
+	background-color: #44ab0c;
+}
+.price-fort{
+	background-color: #56d611;
+}
+
+/*once*/
+.name-plan-once{
+	background-color: #d6b215;
+}
+.price-once{
+	background-color: #fcd116;
+}
+
+/*summary*/
+.summary{
+	border: 1px solid #282828;
+	border-radius: 5px;
+	padding: 0;
+	background-color: #fff;
+}
+
+.ask-plans{
+	margin-bottom: 1em;
+}
+
+.plan-summary{
+	color: #fff;
+	background-color: #282828;
+}
+.img-summary{
+	width: 115px;
+}

@@ -17,8 +17,6 @@
 	<link rel="stylesheet" href="{% static 'css/blog.css' %}">
 	<!--Importing Lobster from Google Fonts-->
 	<link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
-
-
 </head>
 
 <body>
@@ -27,8 +25,13 @@
     	<!-- form-->
     	{% if user.is_authenticated %}
     		<a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
-    	{% endif %}
-        <h1><a href="">Natureme Blog</a></h1>
+    		<a href="{% url 'post_draft_list' %}" class="top-menu"><span class="glyphicon glyphicon-edit"></span></a>
+    		<p class="top-menu">Hello {{ user.name }}<small><a href="{% url 'logout' %}">Log out</a></small></p>
+    	{% else %}
+    		<a href="{% url 'login' %}" class="top-menu"><span class="glyphicon glyphicon-lock"></span></a>	
+		{% endif %}
+
+		<h1><a href="{% url 'blog.views.post_list' %}">Natureme Blog</a></h1>
     </div>
 	
 	<!--adding html for bootstrap-->

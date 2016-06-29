@@ -1,0 +1,83 @@
+html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, time, mark, audio, video, form {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent:;
+}
+
+html, body {
+	height:100%;	
+}
+
+body{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	color: #000;
+}
+a,
+a:hover{
+	text-decoration: none;
+}
+.container-full {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.titles{
+	font-size: 1.6em;
+	color: #000;
+	margin-bottom: 25px;
+}
+.sub-tt{
+	font-size: 1.1em;
+	margin-bottom: 25px;
+	margin-top: 40px;
+}
+.btn-general{
+	margin: 0 0 15px 0;
+	padding: 10px;
+	font-weight: bold;
+	font-size: 1em;
+}
+.modal-body a,
+.modal-body a:visited,
+.modal-body a_active{
+	color: #000!important;
+	text-decoration: none!important;
+}
+.modal-body a:hover{
+	color: #000!important;
+	text-decoration: underline!important;
+}
+.links-modal{
+	margin: 5px 0;
+}
+.icons-profile{
+	margin-right: 5px;
+}
+.img-user-profile {
+    width: 60px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.name-user{
+    margin-left: 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+}
+fieldset{
+	border: 0!important;
+}
+label{
+	font-weight: normal!important;
+}
+footer{
+	height: 1.7em;
+}
+.copyright{
+	font-size: 0.8em;
+}

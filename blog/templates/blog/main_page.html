@@ -1,0 +1,41 @@
+<!--After every change, dont forget to push and pull -->
+
+<!-- Tell HTML file that added CSS -->
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Natureme Eco cleaning booked within seconds</title>
+
+	<!--Bootstrap-->
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+		<!--Telling our template where our CSS file is located-->
+	<link rel="stylesheet" href="{% static 'css/blog.css' %}">
+	
+	<!--Importing Lobster from Google Fonts-->
+	<link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+ 
+    <div class = "page-header">
+    	<h1><a href="">Natureme Blog</a></h1>
+    </div>
+	
+	<!--adding html for bootstrap-->
+	<div class="content container">
+	    <div class="row">
+	        <div class="col-md-8">
+	        	<!-- Template tag 'block' makes an area that will have HTML inserted in it . HTML will come from template that extends this template-->
+		    	{% block content %}
+		    	{% endblock %}
+	        </div>
+	    </div>
+	</div>
+
+</body>
+</html>
