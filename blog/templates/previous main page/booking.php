@@ -46,7 +46,7 @@
             
             <div class="row">
                 <div class="col-lg-12">
-                    <input class="col-lg-12 input-postcode" name="postcode" type="text" placeholder="0000" required">
+                    <input class="col-lg-12 input-postcode" name="postcode" type="text" placeholder="0000" required>
                 </div>
             </div>
 
@@ -159,11 +159,11 @@
                         <h4 class="ask-plans">When would you like the first clean to take place?</h4>
                     </div>
                     <div class="col-md-4 col-sm-12 itens-details-form">
-                        <input class="col-md-12 col-sm-12 inputs-plans" name="" type="time" required">
+                        <input class="col-md-12 col-sm-12 inputs-plans" name="" type="time" required"">
                     </div>
 
                     <div class="col-md-4 col-sm-12 itens-details-form">
-                        <input class="col-md-12 col-sm-12 inputs-plans" name="" type="date" required">
+                        <input class="col-md-12 col-sm-12 inputs-plans" name="" type="date" required"">
                     </div>
                 </div>
             </div>

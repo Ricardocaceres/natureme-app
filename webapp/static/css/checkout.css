@@ -1,0 +1,4 @@
+/* applying styles to any a element inside an h1 element*/
+h1 a {
+    color: #FCA205;
+}
