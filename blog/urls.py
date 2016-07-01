@@ -2,7 +2,8 @@ from django.conf.urls import include, url
 from . import views
 
 urlpatterns = [
-	url(r'^$', views.post_list, name='post_list'),
+	url(r'^$', views.post_main, name='post_main'),
+	url(r'^blog_1$', views.post_list, name='post_list'),
 	
 	#Include url for single page post, called 'post detail' in post_list.html
 	

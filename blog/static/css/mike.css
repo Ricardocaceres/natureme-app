@@ -1,0 +1,26 @@
+
+.container-home{
+    background-image: url('../images/Background Website.jpg');
+    background-repeat: no-repeat; 
+	background-position: center top;
+/*    height: 500px;
+*/    background-size: 100% auto;
+}
+
+.box-home{
+    width: 50%;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 15%;
+    margin-bottom: 15%;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.main-icon{
+    width: 200px;
+}
+
+.icons-home{
+    width: 200px;
+
+}

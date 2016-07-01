@@ -9,8 +9,6 @@ from .forms import PostForm
 from django.contrib.auth.decorators import login_required
 
 
-
-
 #Here is where we will define our views. This means what html files we want to show
 
 #define function to post blogposts
@@ -56,8 +54,9 @@ def post_edit(request, pk):
 
 def post_main(request):
 	#publish latest three posts sorted by 'published date'
+	
 	#publish blog posts sorted by 'published date' and creating a variable 'posts' for our queryset
-	posts=Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')[0:3]
+	posts=Post.objects.filter(published_date__lte=timezone.now()).order_by('-published_date')[0:3]
 	#return function render, brr(request, 'blog/post_list.html', {'posts':posts})
 	return render(request, 'blog/post_main.html', {'posts':posts})
 

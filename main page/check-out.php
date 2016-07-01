@@ -27,7 +27,8 @@
     
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/main.min.css" rel="stylesheet">
+    
+    <!--<link href="css/main.min.css" rel="stylesheet"> -->
 
     <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700'>
 

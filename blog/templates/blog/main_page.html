@@ -1,41 +1,206 @@
-<!--After every change, dont forget to push and pull -->
-
 <!-- Tell HTML file that added CSS -->
 {% load staticfiles %}
 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-	<meta charset="UTF-8">
-	<title>Natureme Eco cleaning booked within seconds</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
-	<!--Bootstrap-->
-	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-		<!--Telling our template where our CSS file is located-->
-	<link rel="stylesheet" href="{% static 'css/blog.css' %}">
-	
-	<!--Importing Lobster from Google Fonts-->
-	<link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    <title>Natureme - Eco Cleaning booking within seconds!</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/normalize.css' %}" rel="stylesheet">
+    <!-- Main CSS with all other modifications
+    <link href="{% static 'css/main.css' %}" rel="stylesheet"> -->
+    <link href="{% static 'css/mike.css' %}" rel="stylesheet"> 
+	<!-- Responsive Step Progress Indicator with Pure CSS -->
+    <link href="css/progress-wizard.min.css" rel="stylesheet">
+    <!--using open sans letter -->
+    <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700'>
 </head>
 
 <body>
- 
-    <div class = "page-header">
-    	<h1><a href="">Natureme Blog</a></h1>
-    </div>
-	
-	<!--adding html for bootstrap-->
-	<div class="content container">
-	    <div class="row">
-	        <div class="col-md-8">
-	        	<!-- Template tag 'block' makes an area that will have HTML inserted in it . HTML will come from template that extends this template-->
-		    	{% block content %}
-		    	{% endblock %}
-	        </div>
-	    </div>
-	</div>
+   
+   <!-- Navigation 
+    <nav class="navbar-transparent">
+        <div class="container-fluid">
 
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mynavbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"></a>         
+            </div>
+
+            <div class="collapse navbar-collapse" id="mynavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a class="links-header" href="booking.php">Book Now</a></li>
+                    <li><a class="links-header" href="#">About</a></li>
+                    <li><a class="links-header" href="#">FAQ</a></li>
+                    <li><a class="links-header" href="#">Contact</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            </div>
+        </div>
+    </nav>-->
+ 	
+    <!--Body of Main Page-->
+    <div class="container-fluid container-home">
+
+        <div class="jumbotron box-home text-center">
+           
+            <img class="main-icon img-circle img-responsive" src="../../static/images/NatureMe Logo Facebook.png" alt="">
+            
+            <p class="txt-home">Eco cleaning booked within seconds.</p>
+            <a class="btn btn-primary btn-lg btn-home btn-book" href="" role="button">Book Now</a>
+            <a class="btn btn-primary btn-lg btn-home btn-work" href="" role="button">Work with us</a>
+        
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="container icons-area text-center">
+        <div class="row">
+            <div class="col-sm-6 col-md-4 col-lg-4 icons">
+                <img class="icons-home" src="../../static/images/easy-pay.png" alt="">
+                <h2 class="tit-icons">Easy payment</h2>
+                <p class="txt-icons">Instant price and easy payment within seconds</p>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-4 icons">
+                <img class="icons-home" src="images/fully.png" alt="">
+                <h2 class="tit-icons">Fully Insured</h2>
+                <p class="txt-icons">$10M Public liability insurance from QBE</p>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-4 icons">
+                <img class="icons-home" src="images/eco.png" alt="">
+                <h2 class="tit-icons">Eco cleaning</h2>
+                <p class="txt-icons">Bring nature home with green cleaning options</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6 col-md-4 col-lg-4 icons">
+                <img class="icons-home" src="images/conv.png" alt="">
+                <h2 class="tit-icons">Convenience</h2>
+                <p class="txt-icons">Multiple bookings, same Eco cleaner, access app anywhere</p>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4 icons">
+                <img class="icons-home" src="images/trust.png" alt="">
+                <h2 class="tit-icons">Trusted Professionals</h2>
+                <p class="txt-icons">Checked, experienced and fully equipped professionals</p>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4 icons">
+                <img class="icons-home" src="images/extra.png" alt="">
+                <h2 class="tit-icons">Extras</h2>
+                <p class="txt-icons">We clean ovens, cupboards, garages, balconys, etc</p>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="txt-blue-bold">testimonials</h1>
+            </div>
+        </div>
+
+        <div class="row testmonials-txts">
+            <div class="col-md-6">
+                <h4 class="txt-test"><span class="quotes-blue-bold">"</span>They did an amazing job<span class="quotes-blue-bold">"</span></h4>
+                <p class="name-test">Joe Steeson, Milton, QLD</p>
+            </div>
+            <div class="col-md-6">
+                <h4 class="txt-test"><span class="quotes-blue-bold">"</span>Excellent work, sparkling home<span class="quotes-blue-bold">"</span></h4>
+                <p class="name-test">Elizabeth, South Brisbane, QLD</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col md-12">
+                <a class="btn btn-primary btn-lg btn-home btn-book" href="booking.php" role="button">Book Now</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid text-center faq">
+        <div class="row bar-faq">
+            <div class="col-md-12">
+                <p class="txt-bar-faq">A few natureme.com.au FAQs</p>
+            </div>
+        </div>
+    </div>
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="box-faq">
+                    <h4 class="tit-faq">Do you accept cash payment?</h4>
+                    <p class="txt-faq">For the security of our customers and drivers we do not accept cash payment for jobs.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="box-faq">
+                    <h4 class="tit-faq">What's Eco-Cleaning?</h4>
+                    <p class="txt-faq">Eco-cleaning is cleaning your home with green products and ingredients coming straight from nature. Eco cleaning will help you have a healthier, safer home, increasing air quality and having a purer environment.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="box-faq">
+                    <h4 class="tit-faq">What are the payment options?</h4>
+                    <p class="txt-faq">Currently we accept secure online payments via debit/credit card (Visa, MasterCard, Amex).</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="box-faq">
+                    <h4 class="tit-faq">Does the Eco-Cleanner bring cleanning supplies?</h4>
+                    <p class="txt-faq">Yes, the eco-cleaner will bring with him green solutions for your home, however, for hygiene purposes, you will have to provide your own vacuum cleaner and mop.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col md-12">
+                <a class="btn btn-primary btn-lg btn-home btn-book btn-bottom" href="booking.php" role="button">Book Now</a>
+            </div>
+        </div>
+    </div>
+
+        
+    <!--adding blog posts from CMS for bootstrap-->
+    <div class="content container">
+        <div class="row">
+            <div class="col-md-8">
+                <!-- Template tag 'block' makes an area that will have HTML inserted in it . HTML will come from template that extends this template-->
+                {% block content %}
+                {% endblock %}
+            </div>
+        </div>
+    </div>
+
+
+
+  <!-- Footer -->
+    <footer>
+        <p class="main-text-footer">NatureMe is a Eco cleaning services marketplace based in Brisbane, Australia.</p>
+        <p class="main-text-footer">©NatureMe ACN 606 425 441.</p>
+    </footer>
+	
+	<script type="text/javascript" src="script.js"></script>
 </body>
+	
 </html>
