@@ -1,6 +1,8 @@
 from django.db import models
 from django.utils import timezone
 
+
+# Model for Blog
 class Post(models.Model):
 	author = models.ForeignKey('auth.User')
 	title = models.CharField(max_length=200)
@@ -15,4 +17,3 @@ class Post(models.Model):
 	def __str__(self):
 		return self.title
 
-# Create your models here.
