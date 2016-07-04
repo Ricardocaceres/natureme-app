@@ -16,12 +16,10 @@
 
 </head>
 <body>
-	
-
 
 	<div>
-	<h1> <p>Booking</p> </h1>
-	<form method= "POST" class="booking-form"> 
+	<h1> <p>Personal Details</p> </h1>
+	<form method= "POST" class="personal_details-form"> 
 		{% csrf_token %}
 		{{ form.as_p }}
 		{{ form.errors }}
