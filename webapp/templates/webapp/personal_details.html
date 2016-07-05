@@ -24,8 +24,20 @@
 		{{ form.as_p }}
 		{{ form.errors }}
 		{{ form.non_field_errors }}
-		<button type="submit" class="save btn btn-default">Next</button>
+	</form>
 
+	<!-- Stripe Checkout -->
+	<form method="POST">
+		<script
+			src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+		    data-key="pk_test_EPuhc8CHx9jhq1BqsSWWQwA4"
+		    data-amount="999"
+		    data-name="Natureme Pty Ltd"
+		    data-description="Eco cleaning Services"
+		    data-image="../static/images/natureme_icon.jpg"
+		    data-locale="auto"
+		    data-currency="aud">
+		</script>
 	</form>
 
 	</div>
