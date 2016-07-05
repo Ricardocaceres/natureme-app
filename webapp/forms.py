@@ -1,6 +1,7 @@
 from django import forms
 from .models import Job, Customer
 
+
 class BookingForm(forms.ModelForm):
 	class Meta:
 		#which model should we use to create this form

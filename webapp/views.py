@@ -1,6 +1,8 @@
 from django.shortcuts import render
 from .forms import BookingForm, PersonalForm
 
+
+
 # created a function called bookings that takes a request and return a function render that will render(put together) our template webapp/booking.html
 def booking(request):
 	if request.method == "POST":
@@ -36,3 +38,4 @@ def personal_details(request):
 	else:
 		form = PersonalForm()
 	return render(request, 'webapp/personal_details.html', {'form': form})
+

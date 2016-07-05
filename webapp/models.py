@@ -1,6 +1,6 @@
 from django.db import models
 
-# Create your models here.
+# Job and Customer models
 class Job(models.Model):
 	frequency = models.CharField(max_length=50)
 	hours=models.IntegerField()
@@ -17,3 +17,5 @@ class Customer(models.Model):
 	address=models.CharField(max_length=200)
 	suburb=models.CharField(max_length=50)
 	postcode=models.IntegerField()
+
+
